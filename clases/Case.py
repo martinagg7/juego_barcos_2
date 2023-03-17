@@ -1,5 +1,8 @@
 from clases import Tablero
-from clases import Tablero
+from clases import Barco
+from clases import Case
+from clases import Conventions
+from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
 
 instances = {}
 jugadas = set()
@@ -30,7 +33,7 @@ def jugar(self):
   self.jugadas.add(self)
   
   if self.barco is not None:
-      if len(casilla.barco.casillas - self.casillas_jugadas) == 0:
+      if len(Barco.casillas - self.casillas_jugadas) == 0:
           print("Hundido !!")
       else:
           print("Tocado !")
@@ -41,7 +44,6 @@ def jugar(self):
 def generar_casillas():
   for x, y in product(range(tablero_num_lineas),
                       range(tablero_num_columnas)):
-      Case(x, y)
 
 def __str__(self):
   """Sobrecarga del método de transformación en cadena"""
