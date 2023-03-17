@@ -1,21 +1,5 @@
 import sys
-
-from itertools import cycle, chain, product, repeat
-from functools import reduce
-from random import shuffle, choice, random
-from clases.Case import *
-from clases.Barco import *
-from clases.Tablero import *
-from clases.Conventions import *
-
-
-from introducir import (
-    solicitar_introducir_numero_extremo,
-    solicitar_introducir_si_o_no,
-    solicitar_introducir_letra,
-    solicitar_introducir_palabra,
-    solicitar_introducir_casilla,
-)
+fro
 
 
 LONGITUDES_BARCOS = [2, 3, 3, 4, 4, 5]
@@ -58,7 +42,7 @@ def jugar_una_partida():
     """Algoritmo de una partida"""
     # Creamos un tablero de juego vacío
 
-    tablero = Tablero()
+  
 
     while True:
         tablero.ver()

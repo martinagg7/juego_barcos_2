@@ -49,4 +49,4 @@ def __init__(self, longitud):
 @classmethod
 def generar_barcos(cls):
         for longitud in Conventions.barcos_longitud:
-            self.longitud=longitud
+            cls(longitud)
