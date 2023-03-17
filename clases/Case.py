@@ -1,7 +1,5 @@
-from clases.Tablero import *
-from clases.Barco import *
-from Conventions import *
-
+from clases import Tablero
+from clases import Tablero
 
 instances = {}
 jugadas = set()
